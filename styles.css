@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    font-family: 'Pirata One', cursive;
+    background-color: #f4f4f4;
+    cursor: url('assets/pirate_cursor.png'), auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #8b4513;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    margin-bottom: 20px;
+}
+
+.assets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.asset {
+    margin: 10px;
+}
+
+.asset img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-adventure {
+    background-image: url('assets/pirate_button.png');
+    background-size: cover;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.start-adventure:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .asset img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+    .start-adventure {
+        width: 150px;
+        height: 45px;
+        font-size: 1em;
+    }
+}
